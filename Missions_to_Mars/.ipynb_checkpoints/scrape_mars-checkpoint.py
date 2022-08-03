@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 import os
 from splinter import Browser
+from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
 
@@ -88,3 +89,9 @@ def scrape():
 
         
     return final_dict
+
+
+if __name__ == "__main__":
+
+    # If running as script, print scraped data
+    print(scrape())

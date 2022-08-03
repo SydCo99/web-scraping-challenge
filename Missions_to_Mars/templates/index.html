@@ -19,7 +19,7 @@
 
     <style>
         h1 {
-            color:   #002a57;
+            color:   #FFEBCD;
             font-size: 45px;
             font-weight: bold;
             /* font-style: italic; */
@@ -29,13 +29,13 @@
 
         h2 {
             /* color:lightcyan; */
-            color:   #002a57;
+            color:   #A0522D;
             font-size: 24px;
             text-align: left;
         }
 
         h3 {
-            color: #002a57;
+            color: #A0522D;
             font-size: 18px;
             /* text-decoration: underline; */
             /* font-style: italic; */
@@ -43,7 +43,7 @@
         }
 
         h4 {
-            color: #002a57;
+            color: #A0522D;
             font-size: 22px;
             font-weight: bold;
             /* text-decoration: underline; */
@@ -57,15 +57,15 @@
             background-color: white;
         }
         .btn-primary {
-            color: #fff;
-            background-color: #002a57;
-            border-color: #002a57;
+            color: #A0522D;
+            background-color: #FFEBCD;
+            border-color: #FFE4C4;
             }
         .jumbotron {
             padding: 5rem 4rem;
             margin-bottom: 5rem;
             background-image: image-set('1500x500.jpeg');
-            background-color: #d79635;
+            background-color: #A0522D;
             border-radius: .5rem;
             }
 
@@ -103,12 +103,12 @@
     <div  class="container">
         <div class="jumbotron text-center">
             <h1>Mission to Mars</h1>
-            <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+            <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape for New Data!</a></p>
         </div>
         <div class="row">
             <div class="col col-12">
                 <h2>Latest Mars News</h2>
-                <h3>{{ mars.news_title }}</h3>
+                <h3>{{ marshome.news_title }}</h3>
                 {{ marshome.news_paragraph }}
             </div>
         </div>

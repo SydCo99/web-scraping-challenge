@@ -79,13 +79,19 @@ def scrape():
     
     #put everything into a single dictionary 
     final_dict = {}
-    final_dict[news_title] = news_title
-    final_dict[news_paragraph] = news_paragraph
-    final_dict[featured_image_url] = featured_image_url
-    final_dict[html_string] =  html_string
-    final_dict[hemisphere_img_urls] =  hemisphere_img_urls
+    final_dict["news_title"] = news_title
+    final_dict["news_paragraph"] = news_paragraph
+    final_dict["featured_image_url"] = featured_image_url
+    final_dict["html_string"] =  html_string
+    final_dict["hemisphere_img_urls"] =  hemisphere_img_urls
     
     browser.quit()
 
         
     return final_dict
+
+
+if __name__ == "__main__":
+
+    # If running as script, print scraped data
+    print(scrape())
