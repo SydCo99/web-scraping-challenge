@@ -56,6 +56,7 @@
             min-height: 100%;
             background-color: white;
         }
+        
         .btn-primary {
             color: #A0522D;
             background-color: #FFEBCD;
@@ -85,8 +86,15 @@
             padding: 2px;
             border: rgb(0, 0, 0) 2px solid;
             margin: 10px 0px 10px 0px;
+        } 
+        .dataframe {
+            width: 50%;
         }
-
+        th, td {
+            padding: 5px;
+            text-align: left;
+            height: 50px
+        }
         #vpadding {
             padding: 25% 0;
             }
@@ -112,16 +120,63 @@
                 {{ marshome.news_paragraph }}
             </div>
         </div>
-        <div class="row">
-            <div class="col col-8">
+        <div style="width:80%;">
+            <div style="float:left;">
                 <h2>Featured Mars Image</h2>
                 <img src={{marshome.featured_image_url}} alt="Featured image">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <h2 style="float:right;">Mars Facts</h2>
+                <h2> </h2>
+                <table style="float:right;" border="1" class="dataframe">
+                    <thead>
+                      <tr style="text-align right;">
+                        <th></th>
+                        <th>Mars</th>
+                        <th>Earth</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Diameter</th>
+                        <td>6,779 km</td>
+                        <td>12,742 km</td>
+                      </tr>
+                      <tr>
+                        <th>Mass</th>
+                        <td>6.39 × 10^23 kg</td>
+                        <td>5.97 × 10^24 kg</td>
+                      </tr>
+                      <tr>
+                        <th>Moons</th>
+                        <td>2</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <th>Distance from Sun</th>
+                        <td>227,943,824 km</td>
+                        <td>149,598,262 km</td>
+                      </tr>
+                      <tr>
+                        <th>Length of Year</th>
+                        <td>687 Earth days</td>
+                        <td>365.24 days</td>
+                      </tr>
+                      <tr>
+                        <th>Temperature</th>
+                        <td>-87 to -5 °C</td>
+                        <td>-88 to 58°C</td>
+                      </tr>
+                    </tbody>
+                  </table> 
             </div>
         </div>
         <br><br>
         <div class="row">
             <div class="col col-12">
-                <h4>Mars Hemisphere</h4>
+                <h4>Mars Hemispheres</h4>
             </div>
         </div>
         <hr>

@@ -38,10 +38,9 @@ def scrape():
     facts_df = planet_facts[0]
     facts_df.columns = ["Mars-Earth Comparison", "Mars", "Earth"]
     facts_df = facts_df.drop(index = 0)
-    facts_df.set_index(["Mars-Earth Comparison"])
+    facts_df.set_index(["Mars-Earth Comparison"], inplace = True)
     #Use Pandas to convert the data to a HTML table string.
     html_string = facts_df.to_html()
-    html_string
     html_string = html_string.replace(':', '')
     
     # Mars Hemispheres
